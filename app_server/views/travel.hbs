@@ -6,6 +6,16 @@
 </head>
 <body>
   <h1>{{title}}</h1>
-  <p>Welcome to Travlr Getaways.</p>
+  <h2>TRAVEL</h2>
+
+  <div class="trip-list">
+    {{#each trips}}
+      <div class="trip-card">
+        <h3>{{this.name}}</h3>
+        <img src="/images/{{this.image}}" alt="{{this.name}}">
+        <p>{{this.description}}</p>
+      </div>
+    {{/each}}
+  </div>
 </body>
 </html>
