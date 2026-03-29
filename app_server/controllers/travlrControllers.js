@@ -1,16 +1,29 @@
-const fs = require("fs");
-const path = require("path");
+const mongoose = require("mongoose");
+const Trip = mongoose.model("trips");
 
-const tripsPath = path.join(__dirname, "..", "data", "trips.json");
-const trips = JSON.parse(fs.readFileSync(tripsPath, "utf8"));
+const travel = async (req, res) => {
+  try {
+    const trips = await Trip.find().lean().exec();
 
-const travel = (req, res) => {
-  res.render("travel", {
-    title: "Travlr Getaways",
-    trips,
-  });
+    res.render("travel", {
+      title: "Travlr Getaways",
+      trips,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
+const apiTrips = async (req, res) => {
+  try {
+    const trips = await Trip.find().exec();
+    res.status(200).json(trips);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 };
 
 module.exports = {
   travel,
+  apiTrips,
 };

@@ -1,17 +1,32 @@
 [
   {
+    "code": "GALE",
     "name": "Gale Reef",
+    "length": "3 nights / 4 days",
+    "start": "2026-04-15",
+    "resort": "Emerald Bay",
+    "perPerson": "$799",
     "image": "reef1.jpg",
-    "description": "Sed et augue lorem..."
+    "description": "Explore beautiful coral reefs and enjoy guided diving adventures in crystal-clear waters."
   },
   {
+    "code": "DAWS",
     "name": "Dawson's Reef",
+    "length": "5 nights / 6 days",
+    "start": "2026-05-10",
+    "resort": "Sunset Cove",
+    "perPerson": "$1199",
     "image": "reef2.jpg",
-    "description": "Integer magna leo..."
+    "description": "Experience a longer tropical getaway with scenic reef dives and relaxing beachfront accommodations."
   },
   {
+    "code": "CLAI",
     "name": "Claire's Reef",
+    "length": "4 nights / 5 days",
+    "start": "2026-06-02",
+    "resort": "Blue Water Resort",
+    "perPerson": "$999",
     "image": "reef3.jpg",
-    "description": "Donec sed felis risus..."
+    "description": "Enjoy a balanced mix of adventure and relaxation with vibrant marine life and resort amenities."
   }
 ]
